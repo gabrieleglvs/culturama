@@ -11,3 +11,30 @@
         column-gap: 75px;
     }
 }
+
+@media(min-width: 1440px) {
+    .menu {
+        column-gap: 105px;
+        flex-wrap: nowrap;
+    }
+
+    .menu__item:nth-child(1) { /*aplicando estilo apenas para o primeiro item que tem essa classe*/
+        order: 1;
+    }
+
+    .menu__item:nth-child(2) { /*PROGRAMACAO*/
+        order: 3;
+    }
+
+    .menu__item:nth-child(3) { /*CATEGORIAS*/
+        order: 4;
+    }
+
+    .menu__item:nth-child(4) { /*SEU LOCAL*/
+        order: 5;
+    }
+
+    .menu__item:nth-child(5) { /*PESQUISA*/
+        order: 2;
+    }
+}
